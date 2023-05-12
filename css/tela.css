@@ -13,7 +13,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #e91e63,#673ab7);
+    background: linear-gradient(135deg, #a38e83,#d3a886);
 }
 .navigation
 {
@@ -40,20 +40,20 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    background: #f00;
+    background: #5c2323;
     border-radius: 50%;
     transition: 0.5s;
     cursor: pointer;
     transition: 0.5s;
+    transition-delay: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-delay: 0.5s;
 
 }
 .navigation.active .toggleMenu
 {
-    background: #ff4181;
+    background: #5c2323;
     transition-delay: 0s;
     transform: translateY(60px);
     width: 30px;
@@ -65,12 +65,64 @@ body
     content: '';
     position: absolute;
     width: 30px;
-    height: 30px;
+    height: 3px;
     border-radius: 3px;
-    background: #333;
-    transform: translateY(-5px
+    background: #fff;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+} 
+.navigation .toggleMenu::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    transform: translateY(5px
     );
+    transition: 0.5s;
+    transition-delay: 0.5s;
 
 } 
-
+.navigation.active .toggleMenu::before
+{
+    transition-delay: 0s;
+    background: #fff;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+.navigation.active .toggleMenu::after
+{
+    transition-delay: 0s;
+    background: #fff;
+    transform: translateY(0px) rotate(315deg) scale(0.6);
+}
+.navigation li
+{
+    list-style: none;
+    transition: 0.5;
+    transform: scale(0);
+}
+.navigation.active li
+{
+    transition-delay: 0.75s;
+    display: flex;
+    transform: scale(1);
+}
+.navigation li a
+{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.navigation li a:hover
+{
+    background: #333;
+    color: #fff;
+}
 

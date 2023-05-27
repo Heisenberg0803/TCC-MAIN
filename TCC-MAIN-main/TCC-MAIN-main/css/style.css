@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+    color: rgb(22, 58, 58);
+    border: none;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+a,label{
+    font-size: .8rem;
+}
+
+a:hover{
+    color: rgb(13, 92, 238);
+}
+
+#login-container{
+    background-color: white;
+    width: 400px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label,input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+}
+input{
+    border: 2px solid rgb(22, 58, 58);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid blue;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bolder;
+    border: none;
+    height: 40px;
+    margin-top: 30px;
+    color: white;
+    background-color: #1b1e23;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    transition: .5s;
+
+}
+
+#social-container, social-container p{
+    margin-bottom: 20px;
+}
+
+#social-container{
+    cursor: pointer;
+}
+#register-cotainer p {
+    margin-bottom: 10px;
+}

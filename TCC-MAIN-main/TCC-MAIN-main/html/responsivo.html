@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/tela.css">
+    <link rel="stylesheet" href="../javscript/js/responsivo.js">
+    <link rel="stylesheet" href="../javscript/js/responsivo.js">
+    
+    <title>SIte responsivo</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sexo<span>.</span></a>
+        <ul class="cabecalho">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#menu">Perfil</a></li>
+            <li><a href="#politic">Política</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <!--Inicio do botao-->
+        <!--Fim do botao-->
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, ducimus. A quasi, repellendus suscipit,
+             esse illum similique commodi quae culpa velit, animi nihil pariatur. Quia assumenda dignissimos dolore!</p>
+             <div class="botao">
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <span class="toggleMenu"></span>
+                </ul>
+                <script src="../javscript/js/tela.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="Sobre" id="about">
+        <div class="row">
+            <div class="col150">
+                <h2 class="titleText"><span>S</span>obre nós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga esse, praesentium veritatis in explicabo laboriosam placeat ipsa illo nesciunt 
+                    delectus facere, cumque ipsam! Voluptatum perspiciatis fugiat, tenetur id dolorem deleniti?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam eum corporis doloremque alias voluptate sapiente fugiat, optio nulla perspiciatis iusto adipisci quae neque a fugit vel quam consequatur accusantium?</p>
+            </div>
+            <div class="col150">
+                <div class="imgBx">
+                    <img src="../img/SobreNos.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky",window.scrollY > 600);
+});
+    </script>
+
+</body>
+</html>
